@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { WidgetPokemonListComponent } from './widget-pokemon-list.component';
 import { WidgetPokemonNameModule } from '../widget-pokemon-name/widget-pokemon-name.module';
@@ -9,6 +9,7 @@ import { WidgetPokemonNameModule } from '../widget-pokemon-name/widget-pokemon-n
     CommonModule,
     WidgetPokemonNameModule
   ],
-  exports: [WidgetPokemonListComponent]
+  exports: [WidgetPokemonListComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class WidgetPokemonListModule { }
